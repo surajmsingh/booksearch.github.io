@@ -1,11 +1,227 @@
-
 <!DOCTYPE html>
-<html>
 
-<frameset cols="70%,30%">
-  <frame src="psr.html">
-  <frame src="login.html">
+<html >
+   
+<body background="book.jpg">
+	<button id="register"><a href="login.html">sign up</a></button>
+	
+    <div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+  
+	<form action="https://scholar.google.co.in/" class="searchform" method="get" name="searchform" target="_blank">
+<input name="sitesearch" type="hidden" value="https://scholar.google.co.in/">
+<input autocomplete="on" class="form-control search" name="q" placeholder="Search in scholar.google.com " required="required"  type="text">
+<button class="openBtn"
+  type="submit">Search</button>
+<bnm76/form>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<button class="openBtn" onclick="openSearch()">search your book here</button>
+
+
+
+
+			<script>
+				var i,j,k,n;
+				function openSearch() {
+					document.getElementById("myOverlay").style.display = "block";
+									}
+
+				function closeSearch() {
+					document.getElementById("myOverlay").style.display = "none";
+										}
+					document.write("array")
+					
+
+
+			</script>
+     
+
+	<head>
+        
+        <title>upload and read your book </title>
+        
+		
+		
+			<style>
+				.body {   
+						
+						font-family: Arial;
+						position:fixed;
+    					top:0;
+    					bottom:0;
+    					left:0;
+    					right:0;
+					}
+				#register{
+				float:right;
+				
+				border: none;
+							padding: 10px 15px;
+							color: white;
+				}
+				#login{
+				float:right;
+				background-color:#008CBA;
+				 color: white;
+				border: none;
+							padding: 10px 15px;
+							text-align: center;
+							
+				}
+				
+				* {
+					box-sizing: border-box;
+				}
+
+				.openBtn {
+							background: #f1f1f1;
+							border: none;
+							padding: 10px 15px;
+							font-size: 20px;
+							cursor: pointer;
+						}
+
+				.openBtn:hover {
+						background: #bbb;
+								}
+
+				.overlay {
+					height: 100%;
+					width: 100%;
+					display: none;
+					position: fixed;
+					z-index: 1;
+					top: 0;
+					left: 0;
+					background-color: rgb(0,0,0);
+					background-color: rgba(0,0,0, 0.9);
+						}
+
+				.overlay-content {
+							position: relative;
+							top: 46%;
+							width: 80%;
+							text-align: center;
+							margin-top: 30px;
+							margin: auto;
+								}
+				.overlay .closebtn {
+					position: absolute;
+					top: 20px;
+					right: 45px;
+					font-size: 60px;
+					cursor: pointer;
+					color: white;
+								}
+
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+
+				.overlay input[type=text] {
+						padding: 15px;
+						font-size: 17px;
+						border: none;
+						float: left;
+						width: 80%;
+						background: white;
+										}
+
+.overlay input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+				.overlay button {
+					float: left;
+					width: 20%;
+					padding: 15px;
+					background: #ddd;
+					font-size: 17px;
+					border: none;
+					cursor: pointer;
+								}
+
+				.overlay button:hover {
+					background: #bbb;
+										}
+										
+										
+										
+								.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
  
-</frameset>
+</style>
+    </head>
+<button id="login"><a href="log.html">sign in</a></button><br>
 
+      <hr> 
+		<hr>
+				<div class="dropdown">
+				<button class="dropbtn"><center>CHOOSE LANGUAGE</center></button>
+				<div class="dropdown-content">
+    <a href="http://www.englishnovels.net/">English</a>
+    <a href="http://hamroawaz.blogspot.com/2011/11/nepali-novels-collections.html">Nepali</a>
+    <a href="">Tamil</a>
+	<a href="">regional</a>
+	<a href="https://sanskritdocuments.org/scannedbooks/">sanskrit</a>
+      
+		</div>
+		</div><br><br'>
+	
+	<br><input type="button"  style="backgroundcolor:green; color:black; width:150px;height:40px;" value="upload your book">
+	
+	
+
+
+          
+</body>
 </html>
